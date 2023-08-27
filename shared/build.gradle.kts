@@ -9,6 +9,8 @@ plugins {
 kotlin {
     androidTarget()
 
+    jvm("desktop")
+
     iosX64()
     iosArm64()
     iosSimulatorArm64()
@@ -62,6 +64,13 @@ kotlin {
             iosSimulatorArm64Main.dependsOn(this)
             dependencies {
                 implementation("io.ktor:ktor-client-darwin:$ktorVersion")
+            }
+        }
+        val desktopMain by getting {
+            dependencies {
+                implementation(compose.desktop.common)
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-swing:1.6.0")
+                implementation("io.ktor:ktor-client-okhttp:$ktorVersion")
             }
         }
     }
