@@ -33,6 +33,12 @@ class BirdsViewModel : ViewModel() {
         httpClient.close()
     }
 
+    fun selectCategory(category: String) {
+        _uiState.update {
+            it.copy(selectedCategory = category)
+        }
+    }
+
     init {
         updateImages()
     }
