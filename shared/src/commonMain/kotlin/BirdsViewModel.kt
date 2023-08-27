@@ -24,6 +24,10 @@ class BirdsViewModel: ViewModel() {
         }
     }
 
+    override fun onCleared() {
+        httpClient.close()
+    }
+
     init {
         updateImages()
     }
