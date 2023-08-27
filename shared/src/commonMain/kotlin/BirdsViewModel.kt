@@ -11,9 +11,14 @@ import kotlinx.coroutines.launch
 import model.BirdImage
 
 data class BirdsUiState(
-    val images: List<BirdImage> = emptyList()
-)
-class BirdsViewModel: ViewModel() {
+    val images: List<BirdImage> = emptyList(),
+    val selectedCategory: String? = null
+) {
+    val categories = images.map { it.category }.toSet()
+    val selectedImages = images.filter { it.category == selectedCategory }
+}
+
+class BirdsViewModel : ViewModel() {
     private val _uiState = MutableStateFlow(BirdsUiState())
     val uiState = _uiState.asStateFlow()
 
