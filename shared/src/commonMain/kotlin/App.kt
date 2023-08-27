@@ -46,17 +46,4 @@ fun App() {
     }
 }
 
-val httpClient = HttpClient() {
-    install(ContentNegotiation) {
-        json()
-    }
-}
-
-suspend fun getImages(): List<BirdImage> {
-    val images = httpClient
-        .get("https://sebi.io/demo-image-api/pictures.json")
-        .body<List<BirdImage>>()
-    return images
-}
-
 expect fun getPlatformName(): String
