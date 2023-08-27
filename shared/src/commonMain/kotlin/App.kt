@@ -81,7 +81,7 @@ fun BirdsPage(viewModel: BirdsViewModel) {
         }
         AnimatedVisibility(uiState.selectedImages.isNotEmpty()) {
             LazyVerticalGrid(
-                columns = GridCells.Adaptive(150.dp),
+                columns = GridCells.Fixed(2),
                 horizontalArrangement = Arrangement.spacedBy(5.dp),
                 verticalArrangement = Arrangement.spacedBy(5.dp),
                 modifier = Modifier.fillMaxSize().padding(horizontal = 5.dp),
