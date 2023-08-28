@@ -2,6 +2,7 @@ rootProject.name = "MyApplication"
 
 include(":androidApp")
 include(":shared")
+include(":desktopApp")
 
 pluginManagement {
     repositories {
@@ -20,6 +21,7 @@ pluginManagement {
         kotlin("android").version(kotlinVersion)
         kotlin("plugin.serialization").version(kotlinVersion)
 
+        id("com.android.base").version(agpVersion)
         id("com.android.application").version(agpVersion)
         id("com.android.library").version(agpVersion)
 
