@@ -1,0 +1,8 @@
+[versions]
+kamel-image-version = "0.6.0"
+
+[libraries]
+kamel-image = { group = "media.kamel", name = "kamel-image", version.ref = "kamel-image-version" }
+
+[plugins]
+
