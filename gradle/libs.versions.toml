@@ -1,6 +1,8 @@
 [versions]
 kamel-image-version = "0.6.0"
 ktor-version = "2.3.1"
+kotlinx-serialization-version = "1.6.0"
+kotlinx-coroutines-version = "1.6.0"
 
 [libraries]
 kamel-image = { group = "media.kamel", name = "kamel-image", version.ref = "kamel-image-version" }
@@ -10,6 +12,8 @@ ktor-serialzation-json = { group = "io.ktor", name = "ktor-serialization-kotlinx
 ktor-client-android = { group = "io.ktor", name = "ktor-client-android", version.ref = "ktor-version" }
 ktor-client-darwin = { group = "io.ktor", name = "ktor-client-darwin", version.ref = "ktor-version" }
 ktor-client-okhttp = { group = "io.ktor", name = "ktor-client-okhttp", version.ref = "ktor-version" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization-version" }
+kotlinx-coroutines-swing = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines-version" }
 
 [plugins]
 

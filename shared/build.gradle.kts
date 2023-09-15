@@ -29,7 +29,6 @@ kotlin {
     }
 
     sourceSets {
-        val ktorVersion = extra["ktor.version"] as String
         val commonMain by getting {
             dependencies {
                 implementation(compose.runtime)
@@ -41,7 +40,7 @@ kotlin {
                 implementation(libs.ktor.client.core)
                 implementation(libs.ktor.client.content.negotiation)
                 implementation(libs.ktor.serialzation.json)
-                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
+                implementation(libs.kotlinx.serialization.json)
                 api("dev.icerock.moko:mvvm-core:0.16.1")
                 api("dev.icerock.moko:mvvm-compose:0.16.1")
             }
@@ -69,7 +68,7 @@ kotlin {
         val desktopMain by getting {
             dependencies {
                 implementation(compose.desktop.common)
-                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-swing:1.6.0")
+                implementation(libs.kotlinx.coroutines.swing)
                 implementation(libs.ktor.client.okhttp)
             }
         }
