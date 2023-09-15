@@ -4,6 +4,9 @@ ktor-version = "2.3.1"
 kotlinx-serialization-version = "1.6.0"
 kotlinx-coroutines-version = "1.6.0"
 moko-mvvm-version = "0.16.1"
+activity-compose-version = "1.6.1"
+appcompat-version = "1.6.1"
+core-ktx = "1.9.0"
 
 [libraries]
 kamel-image = { group = "media.kamel", name = "kamel-image", version.ref = "kamel-image-version" }
@@ -17,6 +20,9 @@ kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-
 kotlinx-coroutines-swing = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines-version" }
 moko-mvvm-core = { group = "dev.icerock.moko", name = "mvvm-core", version.ref = "moko-mvvm-version" }
 moko-mvvm-compose = { group = "dev.icerock.moko", name = "mvvm-compose", version.ref = "moko-mvvm-version" }
+androidx-activity-compose = { group = "androidx.activity", name= "activity-compose", version.ref = "activity-compose-version"}
+androidx-appcompat = { group = "androidx.appcompat", name= "appcompat", version.ref = "appcompat-version"}
+androidx-core = { group = "androidx.core", name= "core-ktx", version.ref = "core-ktx"}
 
 [plugins]
 
