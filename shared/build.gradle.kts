@@ -39,7 +39,7 @@ kotlin {
                 implementation(libs.kamel.image)
                 implementation(libs.ktor.client.core)
                 implementation(libs.ktor.client.content.negotiation)
-                implementation(libs.ktor.serialzation.json)
+                implementation(libs.ktor.serialization.json)
                 implementation(libs.kotlinx.serialization.json)
                 api(libs.moko.mvvm.core)
                 api(libs.moko.mvvm.compose)
