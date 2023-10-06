@@ -1,0 +1,31 @@
+[versions]
+kamel-image-version = "0.6.0"
+ktor-version = "2.3.1"
+kotlinx-serialization-version = "1.6.0"
+kotlinx-coroutines-version = "1.6.0"
+moko-mvvm-version = "0.16.1"
+activity-compose-version = "1.6.1"
+appcompat-version = "1.6.1"
+core-ktx-version = "1.9.0"
+android-gradle-plugin-version = "7.4.2"
+
+[libraries]
+kamel-image = { group = "media.kamel", name = "kamel-image", version.ref = "kamel-image-version" }
+ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor-version" }
+ktor-client-content-negotiation = { group = "io.ktor", name = "ktor-client-content-negotiation", version.ref = "ktor-version" }
+ktor-serialzation-json = { group = "io.ktor", name = "ktor-serialization-kotlinx-json", version.ref = "ktor-version" }
+ktor-client-android = { group = "io.ktor", name = "ktor-client-android", version.ref = "ktor-version" }
+ktor-client-darwin = { group = "io.ktor", name = "ktor-client-darwin", version.ref = "ktor-version" }
+ktor-client-okhttp = { group = "io.ktor", name = "ktor-client-okhttp", version.ref = "ktor-version" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization-version" }
+kotlinx-coroutines-swing = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines-version" }
+moko-mvvm-core = { group = "dev.icerock.moko", name = "mvvm-core", version.ref = "moko-mvvm-version" }
+moko-mvvm-compose = { group = "dev.icerock.moko", name = "mvvm-compose", version.ref = "moko-mvvm-version" }
+androidx-activity-compose = { group = "androidx.activity", name= "activity-compose", version.ref = "activity-compose-version"}
+androidx-appcompat = { group = "androidx.appcompat", name= "appcompat", version.ref = "appcompat-version"}
+androidx-core = { group = "androidx.core", name= "core-ktx", version.ref = "core-ktx-version"}
+
+[plugins]
+android-base = { id = "com.android.base", version.ref = "android-gradle-plugin-version" }
+android-application = { id = "com.android.application", version.ref = "android-gradle-plugin-version" }
+android-library = { id = "com.android.library", version.ref = "android-gradle-plugin-version" }
