@@ -21,7 +21,7 @@ jobs:
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2.9.0
 
-    - name: Build
+    - name: Build Android app
       run: ./gradlew :androidApp:assembleDebug
 
   build-ios:
@@ -50,5 +50,5 @@ jobs:
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2.9.0
 
-      - name: Build
-        run: ./gradlew :shared:run
+      - name: Build desktop app
+        run: ./gradlew :desktopApp:run
