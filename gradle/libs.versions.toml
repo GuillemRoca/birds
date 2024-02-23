@@ -7,7 +7,7 @@ android-compileSdk = "34"
 android-targetSdk = "34"
 android-minSdk = "24"
 
-kamel-image-version = "0.9.2"
+kamel-image-version = "0.9.2-wasm"
 ktor-version = "2.3.8"
 kotlinx-serialization-version = "1.6.3"
 kotlinx-coroutines-version = "1.8.0"
