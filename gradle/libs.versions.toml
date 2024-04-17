@@ -12,7 +12,7 @@ ktor-version = "2.3.10"
 kotlinx-serialization-version = "1.6.3"
 kotlinx-coroutines-version = "1.8.0"
 moko-mvvm-version = "0.16.1"
-activity-compose-version = "1.8.2"
+activity-compose-version = "1.9.0"
 appcompat-version = "1.6.1"
 core-ktx-version = "1.12.0"
 
