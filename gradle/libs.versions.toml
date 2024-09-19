@@ -9,7 +9,7 @@ android-minSdk = "24"
 
 kamel-image-version = "0.9.2"
 ktor-version = "2.3.12"
-kotlinx-serialization-version = "1.7.2"
+kotlinx-serialization-version = "1.7.3"
 kotlinx-coroutines-version = "1.9.0"
 moko-mvvm-version = "0.16.1"
 activity-compose-version = "1.9.2"
