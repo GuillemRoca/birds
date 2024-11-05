@@ -98,10 +98,10 @@ fun BirdsPage(viewModel: BirdsViewModel) {
 @Composable
 fun BirdsImageCell(image: BirdImage) {
     KamelImage(
-        asyncPainterResource("https://sebi.io/demo-image-api/${image.path}"),
+        { asyncPainterResource("https://sebi.io/demo-image-api/${image.path}") },
         "${image.category} by ${image.author}",
-        contentScale = ContentScale.Crop,
-        modifier = Modifier.fillMaxWidth().aspectRatio(1.0f)
+        modifier = Modifier.fillMaxWidth().aspectRatio(1.0f),
+        contentScale = ContentScale.Crop
     )
 }
 
