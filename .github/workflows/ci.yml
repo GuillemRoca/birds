@@ -35,7 +35,7 @@ jobs:
           java-version: 17
 
       - name: Build iOS app
-        run: xcodebuild -allowProvisioningUpdates -project iosApp/iosApp.xcodeproj -configuration Debug -scheme iosApp -sdk iphoneos -destination name='iPhone 14' build
+        run: xcodebuild -workspace iosApp/iosApp.xcodeproj/project.xcworkspace -configuration Debug -scheme iosApp -sdk iphonesimulator
 
   build-jvm:
     runs-on: ubuntu-22.04
