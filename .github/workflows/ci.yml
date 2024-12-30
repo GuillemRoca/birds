@@ -35,7 +35,7 @@ jobs:
           java-version: 17
 
       - name: Build iOS app
-        run: xcodebuild -workspace iosApp/iosApp.xcodeproj/project.xcworkspace -configuration Debug -scheme iosApp -sdk iphonesimulator
+        run: xcodebuild -workspace iosApp/iosApp.xcodeproj/project.pbxproj -configuration Debug -scheme iosApp -sdk iphonesimulator
 
   build-jvm:
     runs-on: ubuntu-22.04
